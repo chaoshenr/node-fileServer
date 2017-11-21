@@ -33,14 +33,6 @@ http.createServer((request, response) => {
 			});
 
 			readerStream.pipe(response);
-			// fs.readFile(filepath, {encoding: 'utf-8'},(err, data) => {
-			// 	if (!err) {
-			// 		response.writeHead(200,{"Content-type": filetype});
-			// 		response.end(data);
-			// 	}else{
-			// 		console.error(err);
-			// 	}
-			// })
 		}else{
 			notFound(response);
 		}
